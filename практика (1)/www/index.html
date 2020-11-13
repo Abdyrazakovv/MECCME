@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<title>it-student</title>
+</head>
+<body>
+	<header>
+		<div class="logo" onclick="slowScroll('#top')">
+			<span>Alish</span>
+		</div>
+		<div class="about">
+			<a href="#" title="Вожможности" onclick="slowScroll('#main')">Возможности</a>
+			<a href="#"  onclick="slowScroll('#overiew')" title="Преимущества">Преимущества</a>
+			<a href="#"  onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
+			<a href="#"  onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+		</div>
+	</header>
+	<div class="top">
+		<h1>Програмирование</h1>
+		<h3>как способ жизни! </h3>
+	</div>
+
+	<div id="main">
+		<div class="intro">
+			<h2>Наши услуги поможет вам!</h2>
+			<span>Большой выбор всего, что может вам пригодиться</span>
+		</div>
+		<div class="text">
+			<span>Lorem nipsum dolor sit amewt , consectetur sdfsdfa  elit . eos impedit, ut  vero commodit Lorem nipsum dolor sit amewt , consectetur sdfsdfa  elit . eos impedit, ut  vero commodit Lorem nipsum dolor sit amewt , consectetur sdfsdfa  elit . eos impedit, ut  vero commodit  </span>
+		</div>
+	</div>
+
+	<div id="overview">
+		<h2>Преимущества</h2>
+		<h4>с нами все проще</h4>
+
+		<div class="img">
+			<img src="img/1.jpg">
+			<span>Изучение языка Ruby для начинающих</span>
+		</div>
+		<div class="img">
+			<img src="img/2.jpg">
+			<span>Уроки PhotoShop для начинающих</span>
+			</div>
+			<div class="img">
+				<img src="img/3.jpg">
+				<span>Уроки Swift для начинающих</span>
+			</div>
+			<div class="img">
+				<img src="img/4.jpg">
+				<span>Создание игры на Phyton 3 с PyGame</span>
+			</div>
+	</div>
+
+	<div id="contacts">
+		<center><h5>Обратная связь</h5></center>
+		<form id="form_input">
+			<label for="name">Имя <span>*</span></label><br>
+			<input type="text" placeholder="Введите имя" name="name" id="name"><br>	
+			<label for="email">Ваша почта<span>*</span></label><br>
+			<input type="email" placeholder="Введите email" name="email" id="email"><br>	
+			<label for="message">Сообщение<span>*</span></label><br>
+			<textarea placeholder="Введите ваше сообщение" name="message" id="message" ></textarea><br>
+			<div id="mess_send" class="btn">Отправить</div>
+		</form>
+	</div>
+
+	<div id="faq">
+		<div>
+			<span class="title">Оплата</span><br>	
+			<span class="heading">Как буудет проходит оплата?</span>
+			<p>Lorem ipsum dolor  sit amet, consectetur adipisicing elit. Accusantium beatea asperiores debitis perspiciatis perferends nemo tempore distinctio officia commodi et non tempora laidantium culpa nostrm, qudem, quasi ratione itaque nam.</p>
+			<span class="heading">Как буудет проходит оплата?</span>
+			<p>Lorem ipsum dolor  sit amet, consectetur adipisicing elit. Accusantium beatea asperiores debitis perspiciatis perferends nemo tempore distinctio officia commodi et non tempora laidantium culpa nostrm, qudem, quasi ratione itaque nam.</p>
+			<span class="heading">Как буудет проходит оплата?</span>
+			<p>Lorem ipsum dolor  sit amet, consectetur adipisicing elit. Accusantium beatea asperiores debitis perspiciatis perferends nemo tempore distinctio officia commodi et non tempora laidantium culpa nostrm, qudem, quasi ratione itaque nam.</p>
+		</div>
+		<div>
+			<span class="title">Информация</span>
+			<span class="heading">Что входит в услугу сервиса</span>
+			<p>Lorem ipsum dolor  sit amet, consectetur adipisicing elit. Accusantium beatea asperiores debitis perspiciatis perferends nemo tempore distinctio officia commodi et non tempora laidantium culpa nostrm, qudem, quasi ratione itaque nam.</p>
+			<span class="heading">Что входит в услугу сервиса</span>
+			<p>Lorem ipsum dolor  sit amet, consectetur adipisicing elit. Accusantium beatea asperiores debitis perspiciatis perferends nemo tempore distinctio officia commodi et non tempora laidantium culpa nostrm, qudem, quasi ratione itaque nam.</p>
+			<span class="heading">Что входит в услугу сервиса</span>
+			<p>Lorem ipsum dolor  sit amet, consectetur adipisicing elit. Accusantium beatea asperiores debitis perspiciatis perferends nemo tempore distinctio officia commodi et non tempora laidantium culpa nostrm, qudem, quasi ratione itaque nam.</p>
+		</div>
+		<div>
+			<span class="title">Гарантии</span>
+			<span class="heading">Какие гарантии есть</span>
+			<p>Lorem ipsum dolor  sit amet, consectetur adipisicing elit. Accusantium beatea asperiores debitis perspiciatis perferends nemo tempore distinctio officia commodi et non tempora laidantium culpa nostrm, qudem, quasi ratione itaque nam.</p>
+			<span class="heading">Какие гарантии есть</span>
+			<p>Lorem ipsum dolor  sit amet, consectetur adipisicing elit. Accusantium beatea asperiores debitis perspiciatis perferends nemo tempore distinctio officia commodi et non tempora laidantium culpa nostrm, qudem, quasi ratione itaque nam.</p>
+			<span class="heading">Какие гарантии есть</span>
+			<p>Lorem ipsum dolor  sit amet, consectetur adipisicing elit. Accusantium beatea asperiores debitis perspiciatis perferends nemo tempore distinctio officia commodi et non tempora laidantium culpa nostrm, qudem, quasi ratione itaque nam.</p>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+
+		$(document).on("scroll",function (){
+			if($(window).scrollTop() ===0)
+				$("header").removeClass("fixed");
+			else
+				$("header").attr("class","fixed");
+
+
+		});
+
+	</script>
+
+</body>
+</html>
